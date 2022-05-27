@@ -6,3 +6,5 @@ alias cc='cd ${HOME}/Code'
 alias cci='cd ${HOME}/Code/Idea'
 alias ccw='cd ${HOME}/Code/WebStorm'
 alias ccp='cd ${HOME}/Code/PyCharm'
+
+alias tlmgr='/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode'

@@ -5,8 +5,7 @@ BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # zsh
 ln -s ${BASEDIR}/zshrc ~/.zshrc
-# p10k
-ln -s ${BASEDIR}/p10k.zsh ~/.p10k.zsh
+ln -s ${BASEDIR}/zsh ~/.zsh
 
 # git
 ln -s ${BASEDIR}/gitconfig ~/.gitconfig
@@ -25,6 +24,8 @@ ln -s ${BASEDIR}/bin ~/.local/bin
 [ ! -d $HOME/.config/fontconfig ] && mkdir -p $HOME/.config/fontconfig
 ln -s ${BASEDIR}/fonts.conf ~/.config/fontconfig/fonts.conf
 
-# oh-my-zsh
-ln -s ${BASEDIR}/oh-my-zsh/mine.zsh ~/.oh-my-zsh/custom/mine.zsh
-ln -s ${BASEDIR}/oh-my-zsh/custom ~/.oh-my-zsh/custom/mine
+# gnupg
+ln -s ${BASEDIR}/gnupg/sshcontrol ~/.gnupg/sshcontrol
+chmod 700 ${BASEDIR}/gnupg
+chmod 600 ${BASEDIR}/gnupg/sshcontrol
+
