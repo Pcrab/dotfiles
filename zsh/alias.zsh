@@ -1,6 +1,8 @@
 alias vim='nvim'
 alias rm='trash'
 
+alias ls='ls --color=auto'
+
 alias cf='cd ${HOME}/cfg'
 alias cc='cd ${HOME}/Code'
 alias cci='cd ${HOME}/Code/Idea'

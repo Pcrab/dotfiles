@@ -29,3 +29,8 @@ ln -s ${BASEDIR}/gnupg/sshcontrol ~/.gnupg/sshcontrol
 chmod 700 ${BASEDIR}/gnupg
 chmod 600 ${BASEDIR}/gnupg/sshcontrol
 
+# ssh
+gpg -o ${BASEDIR}/encrypted/ssh/config -d ${BASEDIR}/ssh/config.gpg 
+ln -s ${BASEDIR}/encrypted/ssh/config ~/.ssh/config
+chmod 700 ${BASEDIR}/encrypted/ssh
+chmod 600 ${BASEDIR}/encrypted/ssh/config
