@@ -4,6 +4,7 @@ BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 [ ! -d $HOME/.config ] && mkdir -p $HOME/.config
 
 # zsh
+rm -rf ~/.zsh
 ln -s ${BASEDIR}/zshrc ~/.zshrc
 ln -s ${BASEDIR}/zsh ~/.zsh
 

@@ -9,5 +9,6 @@ alias ccc='cd ${HOME}/Code/Clion'
 alias cci='cd ${HOME}/Code/Idea'
 alias ccw='cd ${HOME}/Code/WebStorm'
 alias ccp='cd ${HOME}/Code/PyCharm'
+alias cn='cd ${XDG_CONFIG_HOME}/nvim'
 
 alias tlmgr='/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode'
