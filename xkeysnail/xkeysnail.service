@@ -1,0 +1,13 @@
+[Unit]
+Description=xkeysnail
+
+[Service]
+Environment=DISPLAY=:0
+ExecStartPre=-xhost +SI:localuser:root
+ExecStart=xkeysnail /home/pcrab/.config/xkeysnail/config.py
+Type=simple
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=default.target

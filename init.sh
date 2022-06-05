@@ -39,3 +39,15 @@ chmod 600 ${BASEDIR}/encrypted/ssh/config
 # npm
 [ ! -d $HOME/.config/npm ] && mkdir -p $HOME/.config/npm
 ln -s ${BASEDIR}/npmrc ~/.config/npm/npmrc
+
+# rime
+[ ! -d $HOME/.local/share/fcitx5/rime ] && mkdir -p $HOME/.local/share/fcitx5/rime 
+ln -s ${BASEDIR}/rime/default.custom.yaml ~/.local/share/fcitx5/rime/default.custom.yaml
+
+# xkeysnail
+[ ! -d $HOME/.config/xkeysnail ] && mkdir -p $HOME/.config/xkeysnail
+ln -s ${BASEDIR}/xkeysnail/config.py ~/.config/xkeysnail/config.py
+[ ! -d $HOME/.config/systemd/user ] && mkdir -p $HOME/.config/systemd/user
+ln -s ${BASEDIR}/xkeysnail/xkeysnail.service ~/.config/systemd/user/xkeysnail.service
+systemctl --user --now enable xkeysnail.service
+

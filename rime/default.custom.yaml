@@ -1,0 +1,12 @@
+patch:
+  schema_list:
+    - schema: flypy
+  key_binder／bindings:
+    - {accept: "Control+space", toggle: ascii_mode, when: always}
+  ascii_mode: false
+  no_inline: false
+  ascii_composer/good_old_caps_lock: true
+  ascii_composer/switch_key:
+    Shift_L: noop
+    Shift_R: noop
+
