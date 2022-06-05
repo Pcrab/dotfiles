@@ -1,0 +1,9 @@
+evdev:input:b0003v*
+ KEYBOARD_KEY_70029=capslock
+ KEYBOARD_KEY_70039=esc
+ KEYBOARD_KEY_700E6=leftctrl
+
+evdev:atkbd:dmi:*
+ KEYBOARD_KEY_70029=capslock
+ KEYBOARD_KEY_70039=esc
+ KEYBOARD_KEY_700E6=leftctrl

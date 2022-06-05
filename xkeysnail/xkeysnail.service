@@ -2,9 +2,9 @@
 Description=xkeysnail
 
 [Service]
-Environment=DISPLAY=:0
-ExecStartPre=-xhost +SI:localuser:root
-ExecStart=xkeysnail /home/pcrab/.config/xkeysnail/config.py
+# Environment=DISPLAY=:0
+# ExecStartPre=-xhost +SI:localuser:root
+ExecStart=/usr/bin/xkeysnail /home/pcrab/.config/xkeysnail/config.py
 Type=simple
 Restart=always
 RestartSec=2
