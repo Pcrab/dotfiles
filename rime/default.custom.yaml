@@ -1,6 +1,7 @@
 patch:
   schema_list:
     - schema: flypy
+    - schema: double_pinyin_flypy
   key_binder／bindings:
     - {accept: "Control+space", toggle: ascii_mode, when: always}
   ascii_mode: false

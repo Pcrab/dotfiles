@@ -1,0 +1,7 @@
+patch:
+  engine/translators:
+    - punct_translator
+    - r10n_translator
+    - reverse_lookup_translator
+  recognizer/patterns/reverse_lookup: "`[a-z]*$"
+  translator/dictionary: custom

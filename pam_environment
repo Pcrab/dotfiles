@@ -2,4 +2,11 @@ GTK_IM_MODULE=fcitx
 QT_IM_MODULE=fcitx
 XMODIFIERS=@im=fcitx
 SDK_IM_MODULE=fcitx
+INPUT_METHOD=fcitx
+GLFW_IM_MODULE=ibus
+QT_QPA_PLATFORM="wayland;xcb"
 
+BEMENU_BACKEND=wayland
+
+http_proxy=http://127.0.0.1:7890
+https_proxy=http://127.0.0.1:7890
