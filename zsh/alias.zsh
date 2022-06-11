@@ -13,3 +13,5 @@ alias ccp='cd ${HOME}/Code/PyCharm'
 alias cn='cd ${XDG_CONFIG_HOME}/nvim'
 
 alias tlmgr='/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode'
+
+alias magit='ec -e "(magit-status \"$(pwd)\")"'

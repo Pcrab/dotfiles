@@ -32,13 +32,14 @@ zinit wait lucid for \
 zinit wait lucid for \
   zsh-users/zsh-autosuggestions \
   zdharma-continuum/fast-syntax-highlighting \
+  catppuccin/zsh-syntax-highlighting \
   zsh-users/zsh-completions \
   bindmap"^R -> ^H" atinit"
   zstyle :history-search-multi-word page-size 10
   zstyle :history-search-multi-word highlight-color fg=red,bold
   zstyle :plugin:history-search-multi-word reset-prompt-protect 1
   " \
-    zdharma-continuum/history-search-multi-word \
+  zdharma-continuum/history-search-multi-word \
 
 ################################
 #        Custom scripts        #
@@ -46,3 +47,8 @@ zinit wait lucid for \
 for file in $HOME/.zsh/*.zsh; do
   source "$file"
 done
+
+# pnpm
+export PNPM_HOME="/home/pcrab/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
